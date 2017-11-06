@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>templates test</title>
+</head>
+<body>
+    <p>hello world</p>
+
+{#    <ul>#}
+{#        {% for item in name_list %}#}
+{#            <li>{{ item }}</li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+
+{#    {% for key, value in hot_files.items %}#}
+{#        {{ key}}:{{ value }}#}
+{#    {% endfor %}#}
+{#    <br/>直接遍历字典<br/>#}
+{#<li>{{ hot_files.first }}</li>#}
+{#<li>{{ hot_files.second}}</li>#}
+{#<li>{{ hot_files.third }}</li>#}
+
+{% if not name_list %}
+       <p>无数据</p>
+{% else %}
+     <ul>
+            {% for item in name_list %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+{% endif %}
+
+{#    <ul>#}
+{#        {% for item in name_list %}#}
+{#            {% if item == "白夜追凶" %}#}
+{#                <p>很好看的电视剧</p>#}
+{#                {% else %}#}
+{#                <p>一般</p>#}
+{#            {% endif %}#}
+{#        {% endfor %}#}
+{#    </ul>#}
+
+
+
+</body>
+</html>
